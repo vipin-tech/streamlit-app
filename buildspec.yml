@@ -1,0 +1,10 @@
+version: 0.2
+phases:
+  pre_build:
+    commands:
+    - echo "This is pre_build stage"
+    pip install streamlit
+  build:
+    commands:
+    - echo "This is build stage"
+    python ml_app/app.py
